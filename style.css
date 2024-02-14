@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(assets/fonts/Poppins-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(assets/fonts/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(assets/fonts/Poppins-Bold.ttf);
+    font-weight: 700;
+}
+
+body {
+    background-color: #cbd5e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 2000px;
+    height: 2000px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5rem 0 1rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-size: 14px;
+    color: #909193;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 60px;
+    color: #223344;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 1rem;
+    color: #223344;
+}
+
+h4 {
+    font-size: 16px;
+    color: #909193;
+    margin-bottom: 1.5rem;
+    line-height: 30px;
+}
+
+aside img {
+    width: 550px;
+}
+
+button {
+    background-color: #2A4DD0;
+    color: white;
+    border: none;
+    width: 175px;
+    height: 55px;
+    border-radius: 0.7rem;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.container-main {
+    padding: 4rem 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    max-width: 420px;
+}
+
+main div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+main ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+main ul li {
+    padding-left: 24px;
+    background-image: url(assets/img/Done_ring_round_fill.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: left;
+    color: #909193;
+    font-size: 14px;
+}
+
+.container-body {
+    width: 1280px;
+    height: 800px;
+    background-color: #F2F9FE;
+    padding: 1rem 4.5rem;
+}
+
+.switch {
+    width: 45px;
+    height: 22px;
+    background-color: #223344;
+    position: relative;
+    border-radius: 2rem;
+}
+
+/* moon */
+.switch>img {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    height: 80%;
+}
+
+/*  sun container */
+.switch>div {
+    height: 80%;
+    aspect-ratio: 1;
+    background-color: white;
+    border-radius: 2rem;
+    position: absolute;
+    top: 10%;
+    right: 7%;
+}
+
+/*  sun */
+.switch div>img {
+    width: 100%;
+    height: 100%;
+}
